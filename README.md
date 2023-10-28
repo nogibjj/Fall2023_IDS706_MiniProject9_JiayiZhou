@@ -1,35 +1,41 @@
-## Hosted Notebooks
+## Fall2023_IDS706 Mini Project 9: Cloud-Hosted Notebook Data Manipulation
+### by Jiayi Zhou [![CI](https://github.com/nogibjj/Fall2023_IDS706_MiniProject9_JiayiZhou/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/Fall2023_IDS706_MiniProject9_JiayiZhou/actions/workflows/cicd.yml)
 
+### Purpose
+This is for class data engineering mini project 9. It set up a cloud-hosted Jupyter Notebook--google colab and perform data manipulation tasks on a sample dataset.
 
-![74328483-01c15980-4d5c-11ea-8f94-2f93f18fe863](https://github.com/nogibjj/hosted-notebooks-lab/assets/58792/5141311e-1b7f-4b8a-bc0f-97fc7652897e)
+### Requirements
+* Set up a cloud-hosted Jupyter Notebook (e.g., Google Colab)
+* Perform data manipulation tasks on a sample dataset
 
-* [Example notebook here](https://github.com/nogibjj/hosted-notebooks-lab/blob/main/Chapter7_data_science.ipynb)
+### Deliverables
+* [Link to the cloud-hosted notebook](https://colab.research.google.com/drive/1v_s1vSYI0yUTzbqbyeQR78eZgR5ULWhn)
+* [Document demonstrating the tasks performed](https://github.com/nogibjj/Fall2023_IDS706_MiniProject9_JiayiZhou/blob/main/DataManipulation.md)
 
-**Action Items:**
+### Functionality
+In the Jupyter Notebook, the following tasks are performed using a dataset about drug use by age from the [National Survey on Drug Use and Health](https://www.icpsr.umich.edu/web/ICPSR/studies/34933) provided by the Substance Abuse and Mental Health Data Archive:
 
-- Import a sample dataset into the cloud notebook (Ingest stage)
+1. **Loading the Dataset**: The notebook loads the dataset.
 
-- Perform basic data inspection such as checking the number of rows and columns, data types, summary statistics etc (EDA stage) 
+2. **Data Exploration**:
+   - It prints the head of the dataset.
+   - It prints the tail of the dataset.
+   - It displays the columns of the dataset.
+   - It provides information about the shape (number of rows and columns) of the dataset.
 
-- Filter the data based on specific criteria and create a new filtered dataset (EDA)
+3. **Summary Statistics**: Descriptive summary statistics of the dataset are generated.
 
-- Group the data by one or more columns and aggregate metrics like mean, max etc (EDA)
+4. **Data Visualization**:
+   - Two bar plots are created to visualize the age distribution for alcohol use.
+   - Two bar plots are created to visualize the age distribution for marijuana use.
 
-- Join the main dataset with another supplementary dataset (EDA) 
+5. **Data Filtering**: The observations related to individuals under the age of 18 are filtered.
 
-- Create various data visualizations like histograms, scatter plots, box plots etc (EDA)
+6. **Data Sorting**: The dataset is sorted based on the percentage of alcohol use in the group.
 
-
-**Challenge Items:**
-
-- Identify and handle missing or erroneous data in the dataset (EDA) 
-
-- Perform advanced data transformations like normalization, binning, log transforms etc (EDA)
-
-- Implement interactive visualizations and sliders using libraries like plotly (EDA)
-
-- Train a simple machine learning model on the data like linear regression, random forest etc (Modeling stage)
-
-- Evaluate the trained model performance using accuracy metrics, confusion matrix etc (Modeling)
-
-- Summarize key data insights, visualizations and models in a report (Conclusion stage)
+### Steps
+I cloned the project template created by Professor Noah Gift and modified the template. Based on the template from professor, I made the following changes:
+1. Remove the old jupyter notebook template
+2. Creat a new juptyter notebook on google colab
+3. Perform data manipulation in the jupyter notebook
+4. Link the google colab to Github
